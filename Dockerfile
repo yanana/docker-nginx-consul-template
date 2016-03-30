@@ -12,4 +12,6 @@ RUN find /etc/service -type f -name 'run' -a ! -executable -exec chmod +x {} \;
 RUN rm -v /etc/nginx/conf.d/*
 ADD nginx.conf /etc/nginx/nginx.conf
 
+VOLUME /etc/consul-templates
+
 CMD ["my_init"]
