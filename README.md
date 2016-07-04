@@ -2,7 +2,7 @@
 
 [Consul Template](https://github.com/hashicorp/consul-template) powered Nginx container.
 
-## Useage
+## Usage
 
 This container is not intended to be used by itself. You have to create a container which inherits this. E.g., with a configuration template app.conf.ctmpl Dockerfile would be:
 
